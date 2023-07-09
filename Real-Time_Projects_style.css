@@ -1,0 +1,483 @@
+@font-face{
+    font-family:Pinterest-1;
+    src:url("fonts/Pinterest-Sans-Pro-Bold.otf") format("opentype");
+}
+@font-face{
+    font-family:Pinterest-2;
+    src:url("fonts/Pinterest-Sans-Pro-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family:Pinterest-3;
+    src:url("fonts/Pinterest-Sans-Pro-Regular-Italic.otf") format("opentype");
+}
+@font-face{
+    font-family:Pinterest-4;
+    src:url("fonts/Pinterest-UI-Pro-Bold.otf") format("opentype");
+}
+h1,h2,h3{
+    font-weight: 400;
+    font-family: Pinterest-2, sans-serif!important;
+}
+p{
+    font-size: 18px;
+    line-height: 46px;
+    font-family: Pinterest-2, sans-serif!important;
+}
+a{
+    font-size: 18px;
+    font-family: Pinterest-2, sans-serif!important;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%}
+.col-2 {width:16.66%}
+.col-3 {width:25%}
+.col-4 {width:33.33%}
+.col-5 {width:41.66%}
+.col-6 {width:50%}
+.col-7 {width:58.33%}
+.col-8 {width:66.66%}
+.col-9 {width:75%}
+.col-10 {width:83.33%}
+.col-11 {width:91.66%}
+.col-12 {width:100%}
+
+
+/* #### Home.html #### */
+
+    /* #### Header  ####*/
+
+    .Header {
+        overflow: hidden;
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 50px;
+        overflow: hidden;
+    }
+    .Header ul.first_list {
+        margin: 0;
+        padding: 0;
+    }
+    .Header ul.first_list li.logo a img{
+        height: 100px;
+    }
+    .Header ul.first_list li {
+        float: left;
+        padding: 0 50px;
+    }
+    .Header ul.first_list li.list{
+        float: right;
+    }
+    .Header ul.first_list ul.second_list li{
+        padding: 0 30px;
+        padding-top: 40px;
+    }
+    .Header ul.first_list ul.second_list li.search{
+        padding-top: 40px;
+    }
+    .Header ul.first_list ul.second_list li:hover{
+        background-color: #5AD2EC;
+        border-bottom: 3px solid #000;
+    }
+    .Header ul.first_list li ul.second_list li.menu {
+        display: none;
+    }
+    .Header ul.first_list li ul.second_list li.menu:hover{
+        background-color: #fff;
+        border: 0px;
+    }
+    .Header ul.first_list li.listSelected ul.second_list li{
+        display: block;
+        float: none;
+        padding: 0;
+    }
+    .Header ul.first_list li.listSelected ul.second_list li.search{
+        display: none;
+    }
+    .Header ul.first_list li.listSelected ul.second_list li.menu{
+        padding-left: 90px;
+    }
+    .Header ul.first_list li.listSelected ul.second_list li.menu:hover{
+        background-color: #fff;
+        border-bottom: 0px;
+        padding-left: 85px;
+    }
+    .Header ul.first_list li.listSelected {
+        padding: 0;
+        float: right;
+    }
+    .Header ul.first_list ul.second_list li.search:hover{
+        background-color: #fff;
+        padding-top: 38px;
+        border-bottom: 0px;
+    }
+    .Header ul.first_list ul.second_list li.selected {
+        border-bottom: 3px solid #000;
+    }
+    .Header ul.first_list ul.second_list  div.third_list{
+        display: none;
+        padding-left: 20px;
+        background-color: #fff;
+        position: absolute;
+        min-width: 180px;
+        z-index: 1;
+    }
+    .Header ul.first_list ul.second_list li div.third_list a{
+        display: block;
+    }
+    .Header ul.first_list ul.second_list li div.third_list a:hover{
+        color: #5AD2EC;
+    }
+    .Header ul.first_list ul.second_list li{
+        display: inline-block;
+    }
+    .Header ul.first_list ul.second_list li:hover div.third_list{
+        display:block;
+    }
+
+    .Header ul.first_list ul.second_list  div.fourth_list{
+        display: none;
+        padding-left: 20px;
+        background-color: #fff;
+        position: absolute;
+        min-width: 150px;
+        z-index: 1;
+    }
+    .Header ul.first_list li.listSelected ul.second_list div.third_list{
+        position: relative;
+        display: block;
+    }
+    .Header ul.first_list li.listSelected ul.second_list div.fourth_list{
+        position: relative;
+        display: block;
+    }
+    .Header ul.first_list ul.second_list li div.fourth_list a{
+        display: block;
+    }
+    .Header ul.first_list ul.second_list li div.fourth_list a:hover{
+        color: #5AD2EC;
+    }
+    .Header ul.first_list ul.second_list li{
+        display: inline-block;
+    }
+    .Header ul.first_list ul.second_list li:hover div.fourth_list{
+        display:block;
+    }
+.Header ul.first_list ul.second_list  div.fifth_list{
+    display: none;
+    padding-left: 20px;
+    background-color: #fff;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+}
+.Header ul.first_list li.listSelected ul.second_list li div.fifth_list{
+    position: relative;
+    display: block;
+}
+.Header ul.first_list ul.second_list li div.fifth_list a{
+    display: block;
+}
+.Header ul.first_list ul.second_list li div.fifth_list a:hover{
+    color: #5AD2EC;
+}
+.Header ul.first_list ul.second_list li:hover div.fifth_list{
+    display:block;
+}
+  
+    .HeaderClick {
+        display: none;
+    }
+    .search-Bar {
+        display: none;
+        height: auto;
+    }
+    .searchBar {
+        padding: 20px 10px;
+        display: block;
+    }
+    .searchBar input.input1 {
+        height: 40px;
+        width: 80%;
+        padding-left: 20px;
+        border-radius: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 2%;
+    }
+    .searchBar a {
+        padding-left: 20px;
+    }
+
+    /* #### Footer  ####*/
+
+    .Footer {
+        overflow: hidden;
+        margin: 0;
+        padding-bottom: 40px;
+        background-color: #000;
+        color: #B2B2B2;
+        overflow: hidden;
+    }
+    .Footer .row {
+        padding: 1% 8%;
+    }
+    .Footer .row .col-2{
+        height: 400px;
+    }
+    .Footer .row .col-2 a img {
+        width: 80%;
+    }
+    .Footer .row .col-2 ul li a{
+        color: #B2B2B2;
+    }
+    .Footer .row .col-2 ul{
+        padding-left: 0;
+    }
+    .Footer .row .col-2 h2{
+        padding-bottom: 40px;
+    }
+    .Footer .row .col-2 ul li a:hover {
+        color: #fff;
+    }
+    .Footer .row .col-2 ul li{
+        font-size: 18px;
+        line-height: 54px;
+    }
+    .Footer .row .col-2 p{
+        color: #fff;
+    }
+    .Footer .row .col-2 input{
+        height: 40px ;
+        width: 100%;
+        padding-left: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .Footer .row .col-2 button{
+        margin-top: 40px;
+        background-color: #EE8C48;
+        padding: 10px 30px; 
+        box-shadow: 2px 2px 2px rgba(1,1,1,0.16);
+    }
+    .Footer .row .col-2 button a{
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* #### Responsive  ####*/
+
+    @media screen and (max-width:1300px){
+        .Header ul.first_list li ul.second_list li{
+            display: none;
+        }
+        .Header ul.first_list li ul.second_list{
+            float: right;
+            padding-top: 10px;
+        }
+
+        .Header ul.first_list li ul.second_list li.search{
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+        }
+        .Header ul.first_list li ul.second_list li.search:hover{
+            padding-top: 18px;
+        }
+        .Header ul.first_list li ul.second_list li.menu{
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+        }
+    }
+    @media screen and (max-width:800px){
+        
+        /* #### Header #### */
+
+        .Header ul.first_list li{
+            padding: 0;
+        }
+
+        /* #### Footer #### */
+
+        .Footer .row .col-2 {
+            width: 90%;
+        }
+        .Footer .row .col-2 a img{
+            width: 200px;
+        }
+        .Footer .row .col-2 {
+            text-align: center;
+            height: 220px;
+        }
+        .Footer .row .col-2 h2 {
+            padding-bottom: 10px;
+        }
+        .Footer .row .col-2 ul li {
+            line-height: 28px;
+        }
+        .Footer .row .col-2 input {
+            width: 80%;
+            margin-right: 20px;
+        }
+
+    }
+
+/* #### Real_time_projects.html #### */
+
+/* #### Real_time_projects-01 #### */
+
+.Real_time_projects-01 {
+    text-align: center;
+    background-image: url(img/Contact/contact1_img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Real_time_projects-01 h1{
+    font-family: Pinterest-3, sans-serif!important;
+    font-size: 42px;
+    padding-top: 12.5%;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 12.5%;
+}
+
+/* #### Real_time_projects-02 #### */
+
+.Real_time_projects-02 {
+    overflow: hidden;
+}
+.Real_time_projects-02 .row {
+    padding: 80px 10px;
+}
+.Real_time_projects-02 .row .col-8,
+.Real_time_projects-02 .row .col-8,
+.Real_time_projects-02 .row .col-3{
+    margin: auto;
+}
+.Real_time_projects-02 .row .col-8 img{
+    width: 98%;
+}
+.Real_time_projects-02 .row .col-8 p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 10px;
+}
+.Real_time_projects-02 .row .col-8 h1{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 38px;
+}
+.Real_time_projects-02 .row .col-8 form input{
+    width: 70%;
+    margin: 10px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.Real_time_projects-02 .row .col-8 form textarea.message{
+    height: 50px;
+    width: 70%;
+    margin: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+.Real_time_projects-02 .row .col-8 button{
+    margin: 20px 10px;
+    padding: 10px 40px;
+    border: 0;
+    background-color: #5B89BB;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.Real_time_projects-02 .row .col-8 button:hover{
+    background-color: #000;
+}
+.Real_time_projects-02 .row .col-8 button a{
+    color: #fff;
+}
+.Real_time_projects-02 .row .col-3 h2{
+    font-size: 26px;
+}
+.Real_time_projects-02 .row p{
+    font-size: 20px;
+}
+.Real_time_projects-02 .row .col-3 div {
+    font-size: 22px;
+    line-height: 48px;
+    width: 90%;
+    padding-left: 10px;
+    margin: 10px;
+    background-color: #EFEFEF;
+}
+.Real_time_projects-02 .row .col-3 div a:hover{
+    color: #5B89BB;
+}
+
+
+/* #### Responsible #### */
+
+@media screen and (max-width:1000px){
+    
+    /* #### Contact_US-01 #### */
+    
+    .Real_time_projects-01 h1{
+        font-size: 32px;
+    }
+    .Real_time_projects-01 h2{
+        font-size: 18px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width:800px){
+    
+    /* #### Real_time_projects-01 #### */
+    
+    .Real_time_projects-01 h1{
+        font-size: 28px;
+    }
+    /* #### Real_time_projects-02 #### */
+    
+    .Real_time_projects-02 .row .col-8 h1{
+        font-size: 28px;
+    }
+    .Real_time_projects-02 .row .col-8,
+    .Real_time_projects-02 .row .col-3{
+        width: 90%;
+    }
+    
+}
+
+
+
+
