@@ -15,10 +15,10 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Escape user inputs to prevent SQL injection
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $subject = mysqli_real_escape_string($conn, $_POST['subject']);
-    $message = mysqli_real_escape_string($conn, $_POST['message']);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject =$_POST['subject'];
+    $message = $_POST['message'];
 
     // Insert user data into database
     $sql = "INSERT INTO test_database (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
